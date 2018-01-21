@@ -4,6 +4,8 @@
 - [opentutorials.org/Nodejs](https://opentutorials.org/course/2136)
 - [opentutorials.org/Web Application](https://opentutorials.org/course/1688)
 - [opentutorials.org/GIT](https://opentutorials.org/course/2708)
+
+## Please run `npm update` to actual use.
 	
 ### Thank egoing for providing all the lectures.
 	

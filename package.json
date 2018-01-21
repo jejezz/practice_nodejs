@@ -37,7 +37,7 @@
     "session-file-store": "^1.2.0",
     "sha256": "^0.2.0",
     "underscore": "^1.8.3"
-  }
+  },
   "bugs": {
     "url": "https://github.com/jejezz/practice_nodejs/issues"
   },

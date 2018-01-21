@@ -1,0 +1,12 @@
+extends ../layout
+block listing
+  div(class="container")
+    p   Topics
+    div(class="container")
+      ul(class="list-group")
+        each topic in topics
+          li(class="list-group-item")
+            - rid = encodeURIComponent(topic['@rid'])
+            a(href='/topic/'+rid) #{topic.title}
+    div
+      a(class="btn btn-primary" href='/topic/add' role="button") Add new topic

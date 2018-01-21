@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=deivce-width, initial-scale=1")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', type='text/css')
+    title Topics
+  body
+    div(class="container")
+      div(class="jumbotron")
+        div
+        if user
+            a(class="btn btn-primary btn-sm" href="/auth/logout" role="button") Logout
+        else
+            a(class="btn btn-primary btn-sm" href="/auth/login" role="button") Login
+            a(class="btn btn-info btn-sm" href="/auth/register" role="button") Register
+        h1(class="display-6")
+          a(href='/topic') Server Side JavaScript
+        hr(class="my-4")
+        p It's a tutorial for server side javascript using node.js.
+    block listing
+    div(class="container")
+      block content

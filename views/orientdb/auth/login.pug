@@ -1,0 +1,13 @@
+extends ../layout
+block content
+    div(class="container")
+      p(class="h1")  Login 
+      form(action='/auth/login', method='post')
+        div(class="form-group")
+          label(for="textUsername") Username
+          input(class="form-control" type='text' id="textUsername" name='username' placeholder='user name')
+        div(class="form-group")
+          label(for="textPassword") Password
+          input(class="form-control" type='password' id="textPassword" name='password' placeholder='password')
+        div(class="form-group")
+          button(type="submit" class="btn btn-success") Login

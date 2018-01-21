@@ -1,0 +1,16 @@
+extends ./topics_layout
+block content
+  article    
+    p(class="h1") Add topic
+    form( action='/topic/add' method='post')
+      div(class="form-group")
+        label(for="textTitle") Title
+        input(class="form-control" type="text" name="title" id="textTitle" placeholder="Enter the title.")
+      div(class="form-group")
+        label(for="textDescription") Description
+        textarea(class="form-control" name="description" id="textDescription" placeholder="Enter the description.")
+      div(class="form-group") 
+        label(for="textAuthor") Author
+        input(class="form-control" type="text" name="author" id="textAuthor" placeholder="Enter the name of the author")
+      button(type="submit" class="btn btn-success") Submit
+      hr

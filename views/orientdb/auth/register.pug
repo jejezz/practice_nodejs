@@ -1,0 +1,18 @@
+extends ../layout
+block content
+    div(class="container")
+      p(class="h1")  Register 
+      form(action='/auth/register', method='post')
+        div(class="form-group")
+          label(for="textUsername") Username
+          input(class="form-control" type='text' id="textUsername" name='username' placeholder='Enter your username.')
+        div(class="form-group")
+          label(for="textPassword") Password
+          input(class="form-control" type='password' id="textPassword" name='password' placeholder='Enter your password.')
+        div(class="form-group")
+          label(for="textDisplayName") Display Name
+          input(class="form-control" type='text' name='displayName' id="textDisplayName" placeholder='Enter your display name.')
+      div(class="form-group")
+          button(type="submit" class="btn btn-success") Register
+            
+            

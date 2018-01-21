@@ -1,0 +1,11 @@
+extends ./topics_layout
+block content
+  article
+      if topic
+        h2  #{topic.title}
+        p #{topic.description}
+        p Submitted by #{topic.author} 
+        p(class="h6") #{topic.datetime}
+      else
+        h2 Welcome
+        | This is server side javascript tutorial.

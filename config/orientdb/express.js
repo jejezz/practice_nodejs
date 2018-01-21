@@ -17,7 +17,7 @@ module.exports = function() {
     resave: false,
     saveUninitialized: true,
     store: new orientoStore({
-          server: "host=210.120.112.144&port=2424&username=root&password=77887788&db=Odb"
+          server: "host=localhost&port=2424&username=root&password=111111&db=Odb"
       })
     //cookie: { secure: true } // this is for https
   }));
